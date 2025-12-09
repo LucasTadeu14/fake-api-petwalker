@@ -1,45 +1,54 @@
-## Deploy JSON Server to Vercel
+# Fake API
 
-A template to deploy [JSON Server](https://github.com/typicode/json-server) to [Vercel](https://vercel.com), allow you to run fake REST API online!
+Este repositório contém uma API fake construída com **Node.js** e **Express**, simulando um backend para um e-commerce de produtos para animais de estimação. A API inclui endpoints para obter informações sobre produtos e adicionar/remover itens de um carrinho de compras.
 
-Demo from this repository: 
+## Banco de Dados
 
-1. https://json-server-in.vercel.app
-2. https://json-server-in.vercel.app/api/posts
-
-![Powered by Vercel](https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg)
-
-### How to use
-
-1. Click "**Use this template**" or clone this repository.
-2. Update or use the default [`db.json`](./db.json) in the repository.
-3. Sign Up or login into [Vercel](https://vercel.com).
-4. From the Vercel dashboard, click "**+ New Project**" then "**Import**" your repository.
-5. In the "**Configure Project**" screen, leave everything default and click "**Deploy**".
-6. Wait until deployment is done, and your own JSON server is ready to serve!
-
-## Default `db.json`
+A Fake API utiliza um banco de dados simulado no formato JSON com informações sobre produtos para animais de estimação. Aqui está a estrutura:
 
 ```json
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "products": [
+    { 
+      "id": 1, 
+      "title": "Coleira com GPS Inteligente", 
+      "description": "Monitore em tempo real a localização do seu pet com esta coleira inteligente equipada com GPS e bateria de longa duração.",
+      "price": 199.00,
+      "cover": "https://i.imgur.com/vquo597.png"
+    },
+    { 
+      "id": 2, 
+      "title": "Coleira com Câmera HD", 
+      "description": "Veja o mundo pelos olhos do seu animal! Coleira com câmera HD embutida e transmissão via Wi-Fi direto no seu celular.",
+      "price": 299.99,
+      "cover": "https://i.imgur.com/5Yy1vGK.png"
+    },
+    { 
+      "id": 3, 
+      "title": "Coleira Confortável Tradicional", 
+      "description": "Coleira ajustável, feita com material leve e resistente, ideal para o conforto e segurança do seu pet no dia a dia.",
+      "price": 50.00,
+      "cover": "https://i.imgur.com/NceMrrB.png"
+    },
+    { 
+      "id": 4, 
+      "title": "Comedouro Automático Inteligente", 
+      "description": "Programe os horários das refeições do seu pet com este comedouro automático com controle via aplicativo e sensor de nível de ração.",
+      "price": 100.00,
+      "cover": "https://i.imgur.com/86FpoTu.png"
+    },
+    { 
+      "id": 5, 
+      "title": "Seguro para Animais de Estimação", 
+      "description": "Garanta a proteção e o bem-estar do seu pet com um seguro que cobre emergências veterinárias e consultas regulares.",
+      "price": 100.00,
+      "cover": "https://i.imgur.com/SfeZSFF.png"
+    }
+  ]
 }
 ```
+## Tecnologias:
 
-## Enable write operations
-
-By default, only GET operation is allowed, thanks to the contribution by [@VicAv99](https://www.github.com/VicAv99) at [#6](https://github.com/kitloong/json-server-vercel/issues/6), we can now enable write operations as well.
-
-You can find the example code in [`api/server.js`](./api/server.js).
-
-## Reference
-
-1. https://github.com/typicode/json-server
-2. https://vercel.com
-3. https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
+Node.js (JavaScript runtime)
+Express (Framework para Node.js)
+Fake API (Simulação de dados com JSON)
