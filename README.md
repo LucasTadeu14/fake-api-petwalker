@@ -49,6 +49,8 @@ A Fake API utiliza um banco de dados simulado no formato JSON com informações 
 ```
 ## Tecnologias:
 
-Node.js (JavaScript runtime)
-Express (Framework para Node.js)
-Fake API (Simulação de dados com JSON)
+# Node.js (JavaScript runtime)
+
+# Express (Framework para Node.js)
+
+# Fake API (Simulação de dados com JSON)
